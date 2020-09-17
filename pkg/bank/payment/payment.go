@@ -12,3 +12,11 @@ func Max(payments[] types.Payment) types.Payment {
 	}	
 	return max
 }
+func PaymentSources(cards []types.Card) []types.PaymentSource {
+	for _, card:= range cards{
+		if card.Balance>0 && card.Active {
+			PaymentSource.Balance=card.Balance
+			PaymentSource.Number=card.Number
+	} 
+} return PaymentSource
+}

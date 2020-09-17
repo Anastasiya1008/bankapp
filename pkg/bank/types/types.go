@@ -31,3 +31,8 @@ type Result struct {
 	Active bool
 	Limit Money
 }
+type PaymentSource struct {
+	Type string
+	Number PAN
+	Balance Money
+}
