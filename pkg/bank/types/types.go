@@ -32,7 +32,6 @@ type Result struct {
 	Limit Money
 }
 type PaymentSource struct {
-	Type string
 	Number PAN
 	Balance Money
 }

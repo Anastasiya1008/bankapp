@@ -27,26 +27,28 @@ func ExampleMax(){
 	fmt.Println(max)
 	// Output: {5 9000000}
 }
-func ExamplePaymentSources_() {
+func ExamplePaymentSources() {
 	card:=[]types.Card {
 		{
-			Number:12,
-			Balance:20_000_00,
-		},
-		{
-			Number:34,
-			Balance:-10_000_00,
+			PAN:"12",
+			Balance:-20_000_00,
 		},
 		{ 	
-			Active: false,
-			Amount:90_000_00,
+			PAN: "13",
+			Balance:90_000_00,
 		},
 		{ 	
-			Number:45,
-			Amount:23_000_00,
+			Active: true,
+			PAN:"45",
+			Balance:23_000_00,
+		},
+		{ 	
+			Active: true,
+			PAN:"54",
+			Balance:32_000_00,
 		},
 	}
-	payment=PaymentSources(cards)
-	fmt.Println(payment)
-	// Output: {}
+	payments:=PaymentSources(card)
+	fmt.Println(payments)
+	// Output: [{45 2300000} {54 3200000}]
 }	
