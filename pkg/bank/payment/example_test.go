@@ -24,8 +24,8 @@ func ExampleMax(){
 		},
 	}
 	max:=Max(payment)
-	fmt.Println(max)
-	// Output: {5 9000000}
+	fmt.Println(max.ID)
+	// Output: 5
 }
 func ExamplePaymentSources() {
 	card:=[]types.Card {
