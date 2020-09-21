@@ -1,7 +1,7 @@
 package stats
 import (
 	"fmt"
-	"github.com/Anastasiya1008/bank/pkg/bank/types"
+	"github.com/Anastasiya1008/bankapp/pkg/bank/types"
 )
 func ExampleAvg(){
 	payments:=[]types.Payment {

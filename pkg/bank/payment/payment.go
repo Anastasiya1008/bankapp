@@ -1,6 +1,6 @@
 package payment
 import (
-	"github.com/Anastasiya1008/bank/pkg/bank/types"
+	"github.com/Anastasiya1008/bankapp/pkg/bank/types"
 	//"fmt"
 )
 func Max(payments[] types.Payment) types.Payment {

@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"github.com/Anastasiya1008/bank/pkg/bank/types"
+	"github.com/Anastasiya1008/bankapp/pkg/bank/types"
 	//"bank/pkg/bank/types"
 )
 // Avg рассчитывает среднюю сумму платежа

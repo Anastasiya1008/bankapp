@@ -1,6 +1,6 @@
 package card
 import (
-	"github.com/Anastasiya1008/bank/pkg/bank/types"
+	"github.com/Anastasiya1008/bankapp/pkg/bank/types"
 	//"fmt"
 	)
 func IssueCard(cardCurrency types.Currency, cardColor string, cardName string) types.Card {
